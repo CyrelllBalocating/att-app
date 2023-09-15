@@ -24,16 +24,17 @@
             <div class="logo">
                 <h2>PANGASINAN STATE UNIVERSITY</h2>
             </div>
-            <div class="search">
+            <!-- <div class="search">
                 <input type="text" id="search" placeholder="Search here">
                 <label for="search"> <i class="fas fa-search"></i></label>
-            </div>
-            <i class="fas fa-bell"></i>
+            </div> -->
+            <!-- <i class="fas fa-bell"></i> -->
             <div class="user">
-                <a href="../function/logout.php">
-                    <img src="../assets/images/user.png" alt="">
-                    <!-- <i class="fas fa-th-large"></i> -->
-                </a>
+                <img src="../assets/images/user.png" alt="" onclick="toggleDropdown()">
+                <div id="userDropdown" class="user-dropdown-content">
+                    <a href="#profile">Profile</a>
+                    <a href="../function/logout.php">Logout</a>
+                </div>
             </div>
         </div>
 
@@ -96,9 +97,19 @@
 
         <!--------------------- MAIN ---------------------------->
 
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
         <script src="chart1.js"></script>
-        <script src="chart2.js"></script>
+        <script src="chart2.js"></script> -->
+        <script>
+            function toggleDropdown() {
+                var dropdown = document.getElementById("userDropdown");
+                if (dropdown.style.display === "none" || !dropdown.style.display) {
+                    dropdown.style.display = "block";
+                } else {
+                    dropdown.style.display = "none";
+                }
+            }
+        </script>
 </body>
 
 </html>

@@ -97,7 +97,7 @@ include('sidebar.php');
                 ?>
             </div>
             <!--------------------- CHART ---------------------------->
-            <div class="charts">
+            <!-- <div class="charts">
                 <div class="chart">
                     <h2>Attendance</h2>
                     <canvas id="barChart"></canvas>
@@ -106,11 +106,11 @@ include('sidebar.php');
                     <h2>Students</h2>
                     <canvas id="doughnut"></canvas>
                 </div>
-            </div>
+            </div> -->
         </div>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
+        <!-- <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.min.js"></script>
         <script src="chart1.js"></script>
-        <script src="chart2.js"></script>
+        <script src="chart2.js"></script> -->
 </body>
 
 </html>
